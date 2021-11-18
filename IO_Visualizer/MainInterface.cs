@@ -123,15 +123,6 @@ namespace IO_Visualizer
 
         private void ProcessData(object sender, EventArgs e)
         {
-            string node1;
-            string node2;
-            string node3;
-            string node4;
-            string node5;
-            string node6;
-            string node7;
-            string node8;
-            string node9;
             if (serialPort1.IsOpen == false)
             {
                 return;

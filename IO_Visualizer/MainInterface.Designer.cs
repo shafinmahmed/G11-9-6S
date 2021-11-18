@@ -33,13 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.labelStatus = new System.Windows.Forms.Label();
             this.comBoxBaudrate = new System.Windows.Forms.ComboBox();
             this.comBoxPortList = new System.Windows.Forms.ComboBox();
             this.btnClosePort = new System.Windows.Forms.Button();
             this.btnOpenPort = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.txtBoxArdInput = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.labelRed = new System.Windows.Forms.Label();
@@ -103,25 +103,6 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Arduino Communication";
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.textBox11.Location = new System.Drawing.Point(1064, 265);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(121, 27);
-            this.textBox11.TabIndex = 26;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.textBox10.HideSelection = false;
-            this.textBox10.Location = new System.Drawing.Point(841, 265);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(121, 27);
-            this.textBox10.TabIndex = 25;
             // 
             // labelStatus
             // 
@@ -189,6 +170,25 @@
             this.btnOpenPort.Text = "Open";
             this.btnOpenPort.UseVisualStyleBackColor = true;
             this.btnOpenPort.Click += new System.EventHandler(this.btnOpenPort_Click);
+            // 
+            // textBox11
+            // 
+            this.textBox11.BackColor = System.Drawing.Color.White;
+            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.textBox11.Location = new System.Drawing.Point(1064, 265);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(121, 27);
+            this.textBox11.TabIndex = 26;
+            // 
+            // textBox10
+            // 
+            this.textBox10.BackColor = System.Drawing.Color.White;
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.textBox10.HideSelection = false;
+            this.textBox10.Location = new System.Drawing.Point(841, 265);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(121, 27);
+            this.textBox10.TabIndex = 25;
             // 
             // txtBoxArdInput
             // 
