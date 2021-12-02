@@ -191,7 +191,7 @@
             // 
             this.textBox11.BackColor = System.Drawing.Color.White;
             this.textBox11.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.textBox11.Location = new System.Drawing.Point(1068, 155);
+            this.textBox11.Location = new System.Drawing.Point(1068, 340);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(121, 27);
             this.textBox11.TabIndex = 26;
@@ -201,14 +201,14 @@
             this.textBox10.BackColor = System.Drawing.Color.White;
             this.textBox10.Font = new System.Drawing.Font("Segoe UI", 11.25F);
             this.textBox10.HideSelection = false;
-            this.textBox10.Location = new System.Drawing.Point(1305, 155);
+            this.textBox10.Location = new System.Drawing.Point(1305, 340);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(121, 27);
             this.textBox10.TabIndex = 25;
             // 
             // txtBoxArdInput
             // 
-            this.txtBoxArdInput.Location = new System.Drawing.Point(1068, 120);
+            this.txtBoxArdInput.Location = new System.Drawing.Point(1068, 305);
             this.txtBoxArdInput.Name = "txtBoxArdInput";
             this.txtBoxArdInput.ReadOnly = true;
             this.txtBoxArdInput.Size = new System.Drawing.Size(358, 25);
@@ -222,7 +222,7 @@
             // 
             this.labelRed.AutoSize = true;
             this.labelRed.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRed.Location = new System.Drawing.Point(1171, 192);
+            this.labelRed.Location = new System.Drawing.Point(1171, 377);
             this.labelRed.Name = "labelRed";
             this.labelRed.Size = new System.Drawing.Size(155, 65);
             this.labelRed.TabIndex = 5;
@@ -235,7 +235,7 @@
             this.txtBoxSerialMonitor.Name = "txtBoxSerialMonitor";
             this.txtBoxSerialMonitor.ReadOnly = true;
             this.txtBoxSerialMonitor.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBoxSerialMonitor.Size = new System.Drawing.Size(358, 49);
+            this.txtBoxSerialMonitor.Size = new System.Drawing.Size(358, 212);
             this.txtBoxSerialMonitor.TabIndex = 6;
             this.txtBoxSerialMonitor.TextChanged += new System.EventHandler(this.txtBoxSerialMonitor_TextChanged);
             // 
@@ -288,11 +288,11 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(263, 129);
+            this.button4.Location = new System.Drawing.Point(668, 52);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(129, 71);
             this.button4.TabIndex = 30;
-            this.button4.Text = "Node 6";
+            this.button4.Text = "Node 4";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -316,11 +316,11 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Black;
-            this.button6.Location = new System.Drawing.Point(668, 52);
+            this.button6.Location = new System.Drawing.Point(263, 129);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(129, 71);
             this.button6.TabIndex = 32;
-            this.button6.Text = "Node 4";
+            this.button6.Text = "Node 6";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // button7
@@ -594,7 +594,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(952, 448);
+            this.ClientSize = new System.Drawing.Size(1443, 448);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);

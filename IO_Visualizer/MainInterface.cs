@@ -51,6 +51,11 @@ namespace IO_Visualizer
             distances.Add("18");
             distances.Add("19");
             distances.Add("20");
+            distances.Add("21");
+            distances.Add("22");
+            distances.Add("23");
+            distances.Add("24");
+            distances.Add("25");
 
 
         }
@@ -132,6 +137,8 @@ namespace IO_Visualizer
             Stream portStream = serialPort1.BaseStream;
             portStream.Read(data, 0, data.Length);
             string dataString = Encoding.UTF8.GetString(data);
+            txtBoxSerialMonitor.Text = dataString;
+            /*
             List<int> cleanData = new List<int>();
             if (dataString.Length != 0)
             {
@@ -149,7 +156,7 @@ namespace IO_Visualizer
                     }
                     else
                     {
-                        int value = 20;
+                        int value = 25;
                         cleanData.Add(value);
                     }
                 }
@@ -194,13 +201,63 @@ namespace IO_Visualizer
                     //button9
                     BaseProgram.ColorInfo color9 = BaseProgram.GetRGB(cleanData[8]);
                     button9.BackColor = Color.FromArgb(color9.r, color9.g, color9.b);
-
+                    //button10
+                    BaseProgram.ColorInfo color10 = BaseProgram.GetRGB(cleanData[9]);
+                    button10.BackColor = Color.FromArgb(color10.r, color10.g, color10.b);
+                    //button11
+                    BaseProgram.ColorInfo color11 = BaseProgram.GetRGB(cleanData[10]);
+                    button11.BackColor = Color.FromArgb(color11.r, color11.g, color11.b);
+                    //button12
+                    BaseProgram.ColorInfo color12 = BaseProgram.GetRGB(cleanData[11]);
+                    button12.BackColor = Color.FromArgb(color12.r, color12.g, color12.b);
+                    //button13
+                    BaseProgram.ColorInfo color13 = BaseProgram.GetRGB(cleanData[12]);
+                    button13.BackColor = Color.FromArgb(color13.r, color13.g, color13.b);
+                    //button14
+                    BaseProgram.ColorInfo color14 = BaseProgram.GetRGB(cleanData[13]);
+                    button14.BackColor = Color.FromArgb(color14.r, color14.g, color14.b);
+                    //button15
+                    BaseProgram.ColorInfo color15 = BaseProgram.GetRGB(cleanData[14]);
+                    button15.BackColor = Color.FromArgb(color15.r, color15.g, color15.b);
+                    //button16
+                    BaseProgram.ColorInfo color16 = BaseProgram.GetRGB(cleanData[15]);
+                    button16.BackColor = Color.FromArgb(color16.r, color16.g, color16.b);
+                    //button17
+                    BaseProgram.ColorInfo color17 = BaseProgram.GetRGB(cleanData[16]);
+                    button17.BackColor = Color.FromArgb(color17.r, color17.g, color17.b);
+                    //button18
+                    BaseProgram.ColorInfo color18 = BaseProgram.GetRGB(cleanData[17]);
+                    button18.BackColor = Color.FromArgb(color18.r, color18.g, color18.b);
+                    //button19
+                    BaseProgram.ColorInfo color19 = BaseProgram.GetRGB(cleanData[18]);
+                    button19.BackColor = Color.FromArgb(color19.r, color19.g, color19.b);
+                    //button20
+                    BaseProgram.ColorInfo color20 = BaseProgram.GetRGB(cleanData[19]);
+                    button20.BackColor = Color.FromArgb(color20.r, color20.g, color20.b);
+                    //button21
+                    BaseProgram.ColorInfo color21 = BaseProgram.GetRGB(cleanData[20]);
+                    button21.BackColor = Color.FromArgb(color21.r, color21.g, color21.b);
+                    //button22
+                    BaseProgram.ColorInfo color22 = BaseProgram.GetRGB(cleanData[21]);
+                    button22.BackColor = Color.FromArgb(color22.r, color22.g, color22.b);
+                    //button23
+                    BaseProgram.ColorInfo color23 = BaseProgram.GetRGB(cleanData[22]);
+                    button23.BackColor = Color.FromArgb(color23.r, color23.g, color23.b);
+                    //button24
+                    BaseProgram.ColorInfo color24 = BaseProgram.GetRGB(cleanData[23]);
+                    button24.BackColor = Color.FromArgb(color24.r, color24.g, color24.b);
+                    //button25
+                    BaseProgram.ColorInfo color25 = BaseProgram.GetRGB(cleanData[24]);
+                    button25.BackColor = Color.FromArgb(color25.r, color25.g, color25.b);
                 }
+
                 catch (Exception)
                 {
 
                 }
+            
             }
+            */
         }
 
         private void MainInterface_FormClosing(object sender, FormClosingEventArgs e)
