@@ -261,7 +261,7 @@ void loop() {
   duration6 = pulseIn(PinData6, HIGH);
   distance6 = (duration6 / 2) * 0.0343;
   stringDistance6 = String(distance6);
-  Serial.print("          stringDistance6: "); Serial.print(stringDistance6);
+ Serial.print("          stringDistance6: "); Serial.print(stringDistance6);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -341,7 +341,7 @@ void loop() {
   duration11 = pulseIn(PinData11, HIGH);
   distance11 = (duration11 / 2) * 0.0343;
   stringDistance11 = String(distance11);
-  Serial.print("          stringDistance11: "); Serial.print(stringDistance11);
+ Serial.print("          stringDistance11: "); Serial.print(stringDistance11);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -405,10 +405,10 @@ void loop() {
   duration15 = pulseIn(PinData15, HIGH);
   distance15 = (duration15 / 2) * 0.0343;
   stringDistance15 = String(distance15);
-  Serial.print("          stringDistance15: "); Serial.print(stringDistance15);
+  Serial.print("          stringDistance15: "); Serial.println(stringDistance15);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+/*
 //////////////////////////--Ultrasonic 16 Data collection/////////////////////////////////////////////////////////////////////////////////////
   
   pinMode(PinData16, OUTPUT);
@@ -421,7 +421,7 @@ void loop() {
   duration16 = pulseIn(PinData16, HIGH);
   distance16 = (duration16 / 2) * 0.0343;
   stringDistance16 = String(distance16);
-  Serial.print("          stringDistance16: "); Serial.print(stringDistance16);
+  //Serial.print("          stringDistance16: "); Serial.print(stringDistance16);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -437,7 +437,7 @@ void loop() {
   duration17 = pulseIn(PinData17, HIGH);
   distance17 = (duration17 / 2) * 0.0343;
   stringDistance17 = String(distance17);
-  Serial.print("          stringDistance17: "); Serial.print(stringDistance17);
+  //Serial.print("          stringDistance17: "); Serial.print(stringDistance17);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -453,7 +453,7 @@ void loop() {
   duration18 = pulseIn(PinData18, HIGH);
   distance18 = (duration18 / 2) * 0.0343;
   stringDistance18 = String(distance18);
-  Serial.print("          stringDistance18: "); Serial.print(stringDistance18);
+  //Serial.print("          stringDistance18: "); Serial.print(stringDistance18);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -469,7 +469,7 @@ void loop() {
   duration19 = pulseIn(PinData19, HIGH);
   distance19 = (duration19 / 2) * 0.0343;
   stringDistance19 = String(distance19);
-  Serial.print("          stringDistance19: "); Serial.print(stringDistance19);
+  //Serial.print("          stringDistance19: "); Serial.print(stringDistance19);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -485,7 +485,7 @@ void loop() {
   duration20 = pulseIn(PinData20, HIGH);
   distance20 = (duration20 / 2) * 0.0343;
   stringDistance20 = String(distance20);
-  Serial.print("          stringDistance20: "); Serial.print(stringDistance20);
+  //Serial.print("          stringDistance20: "); Serial.print(stringDistance20);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -501,7 +501,7 @@ void loop() {
   duration21 = pulseIn(PinData21, HIGH);
   distance21 = (duration21 / 2) * 0.0343;
   stringDistance21 = String(distance21);
-  Serial.print("          stringDistance21: "); Serial.print(stringDistance21);
+  //Serial.print("          stringDistance21: "); Serial.print(stringDistance21);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -517,7 +517,7 @@ void loop() {
   duration22 = pulseIn(PinData22, HIGH);
   distance22 = (duration22 / 2) * 0.0343;
   stringDistance22 = String(distance22);
-  Serial.print("          stringDistance22: "); Serial.print(stringDistance22);
+  //Serial.print("          stringDistance22: "); Serial.print(stringDistance22);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -533,7 +533,7 @@ void loop() {
   duration23 = pulseIn(PinData23, HIGH);
   distance23 = (duration23 / 2) * 0.0343;
   stringDistance23 = String(distance23);
-  Serial.print("          stringDistance23: "); Serial.print(stringDistance23);
+  //Serial.print("          stringDistance23: "); Serial.print(stringDistance23);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -549,7 +549,7 @@ void loop() {
   duration24 = pulseIn(PinData24, HIGH);
   distance24 = (duration24 / 2) * 0.0343;
   stringDistance24 = String(distance24);
-  Serial.print("          stringDistance24: "); Serial.print(stringDistance24);
+  //Serial.print("          stringDistance24: "); Serial.print(stringDistance24);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -565,9 +565,9 @@ void loop() {
   duration25 = pulseIn(PinData25, HIGH);
   distance25 = (duration25 / 2) * 0.0343;
   stringDistance25 = String(distance25);
-  Serial.print("          stringDistance25: "); Serial.print(stringDistance25);
+  //Serial.print("          stringDistance25: "); Serial.print(stringDistance25);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+*/
 }
 //
