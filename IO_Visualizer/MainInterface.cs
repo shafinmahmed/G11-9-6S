@@ -136,35 +136,24 @@ namespace IO_Visualizer
             byte[] data = new byte[serialPort1.BytesToRead];
             Stream portStream = serialPort1.BaseStream;
             portStream.Read(data, 0, data.Length);
-            string dataString = Encoding.UTF8.GetString(data);
+            string dataString = Encoding.UTF8.GetString(data).Trim();
 
-            List<int> cleanData = new List<int>();
+            string processedData = "";
             foreach (string theStr in dataString.Split('\n'))
             {
                 if (theStr.Count(f=> (f == 'A')) == 25)
                 {
-
-                    string processedData = theStr;
-                    string[] allData = theStr.Split('A');
-
-                    foreach (string item in allData)
-                    {
-                        string trimmed = item.Trim();
-                        if (distances.Contains(trimmed))
-                        {
-                            int value = distances.IndexOf(trimmed) + 1;
-                            cleanData.Add(value);
-                        }
-
-                    }
+                    processedData = theStr;
                 }
             }
 
-            /*
+            //txtBoxSerialMonitor.Text = processedData;
+
+            
             List<int> cleanData = new List<int>();
-            if (dataString.Length != 0)
+            if (processedData.Length != 0)
             {
-                string[] alldata = dataString.Split('A');
+                string[] alldata = processedData.Split('A');
 
 
 
@@ -183,7 +172,7 @@ namespace IO_Visualizer
                     }
                 }
             }
-            */
+            
 
 
             string str = "";
@@ -192,10 +181,16 @@ namespace IO_Visualizer
             {
                 str += item.ToString() + " ";
             }
+
+            //txtBoxSerialMonitor.Text = str;
+            
             if (str.Trim().Length != 0)
             {
+                txtBoxSerialMonitor.Text = str;
+                /*
                 try
                 {
+                    
                     //button1
                     BaseProgram.ColorInfo color1 = BaseProgram.GetRGB(cleanData[0]);
                     button1.BackColor = Color.FromArgb(color1.r, color1.g, color1.b);
@@ -271,13 +266,15 @@ namespace IO_Visualizer
                     //button25
                     BaseProgram.ColorInfo color25 = BaseProgram.GetRGB(cleanData[24]);
                     button25.BackColor = Color.FromArgb(color25.r, color25.g, color25.b);
+                
                 }
 
                 catch (Exception)
                 {
-
+                    txtBoxSerialMonitor.Text = str;
                 }
-            
+                */
+
             }
             
         }
