@@ -132,12 +132,34 @@ namespace IO_Visualizer
             {
                 return;
             }
-            Thread.Sleep(50);
+            Thread.Sleep(100);
             byte[] data = new byte[serialPort1.BytesToRead];
             Stream portStream = serialPort1.BaseStream;
             portStream.Read(data, 0, data.Length);
             string dataString = Encoding.UTF8.GetString(data);
-            txtBoxSerialMonitor.Text = dataString;
+
+            List<int> cleanData = new List<int>();
+            foreach (string theStr in dataString.Split('\n'))
+            {
+                if (theStr.Count(f=> (f == 'A')) == 25)
+                {
+
+                    string processedData = theStr;
+                    string[] allData = theStr.Split('A');
+
+                    foreach (string item in allData)
+                    {
+                        string trimmed = item.Trim();
+                        if (distances.Contains(trimmed))
+                        {
+                            int value = distances.IndexOf(trimmed) + 1;
+                            cleanData.Add(value);
+                        }
+
+                    }
+                }
+            }
+
             /*
             List<int> cleanData = new List<int>();
             if (dataString.Length != 0)
@@ -161,7 +183,7 @@ namespace IO_Visualizer
                     }
                 }
             }
-
+            */
 
 
             string str = "";
@@ -257,7 +279,7 @@ namespace IO_Visualizer
                 }
             
             }
-            */
+            
         }
 
         private void MainInterface_FormClosing(object sender, FormClosingEventArgs e)
