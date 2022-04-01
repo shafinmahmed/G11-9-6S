@@ -1,7 +1,6 @@
 String concatDistance;
-double limit = 100.0;
-int MaxPWM = 250;
-int MinPWM = 100;
+double limit = 50.0;
+double maxPWM = 150; // For the mosfets being used 4 volts is maximum gate thrshold voltage so don't use maxium pwm. 150 Seems to work really well
 
 
 //////////////////////////--Node 1 pin declaration/////////////////////////////////////////////////////////////////////////////
@@ -96,7 +95,7 @@ void loop() {
   duration1 = pulseIn(PinData1, HIGH);
   distance1 = (duration1 / 2) * 0.0343;
   //stringDistance1 = String(distance1);
-  Serial.print("stringDistance1: "); Serial.print(distance1);
+  Serial.print(" stringDistance1: "); Serial.print(distance1);
 
 
 
@@ -104,10 +103,7 @@ void loop() {
   if (distance1 > limit) {
     distance1 = limit;
   }
-   if(distance1 > limit/2){
-  motorSpeed1 = map(distance1, 0, limit, MaxPWM, 0);}
-  else{
-    motorSpeed1 = map(distance1, 0, limit, MinPWM, 0);}
+  motorSpeed1 = map(distance1, 0, limit, maxPWM, 0);
   analogWrite(motor1, motorSpeed1);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -126,8 +122,7 @@ void loop() {
   duration2 = pulseIn(PinData2, HIGH);
   distance2 = (duration2 / 2) * 0.0343;
   //stringDistance2 = String(distance2);
-  Serial.print("    stringDistance2: "); Serial.print(distance2);
-  
+  Serial.print(" stringDistance2: "); Serial.print(distance2);
 
 
 
@@ -135,13 +130,7 @@ void loop() {
   if (distance2 > limit) {
     distance2 = limit;
   }
-
-  if(distance2 > limit/2){
-  motorSpeed2 = map(distance2, 0, limit, MaxPWM, 0);}
-  else{
-    motorSpeed2 = map(distance2, 0, limit, MinPWM, 0);}
-  
-  
+  motorSpeed2 = map(distance2, 0, limit, maxPWM, 0);
   analogWrite(motor2, motorSpeed2);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -160,7 +149,7 @@ void loop() {
   duration3 = pulseIn(PinData3, HIGH);
   distance3 = (duration3 / 2) * 0.0343;
   //stringDistance3 = String(distance3);
-  Serial.print("   stringDistance3: "); Serial.print(distance3);
+  Serial.print(" stringDistance3: "); Serial.print(distance3);
 
 
 
@@ -168,13 +157,7 @@ void loop() {
   if (distance3 > limit) {
     distance3 = limit;
   }
-
-    if(distance3 > limit/2){
-  motorSpeed3 = map(distance3, 0, limit, MaxPWM, 0);}
-  else{
-    motorSpeed3 = map(distance3, 0, limit, MinPWM, 0);}
-
-  
+  motorSpeed3 = map(distance3, 0, limit, maxPWM, 0);
   analogWrite(motor3, motorSpeed3);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -193,7 +176,7 @@ void loop() {
   duration4 = pulseIn(PinData4, HIGH);
   distance4 = (duration4 / 2) * 0.0343;
   //stringDistance4 = String(distance4);
-  Serial.print("    stringDistance4: "); Serial.print(distance4);
+  Serial.print(" stringDistance4: "); Serial.print(distance4);
 
 
 
@@ -201,12 +184,7 @@ void loop() {
   if (distance4 > limit) {
     distance4 = limit;
   }
-
-  if(distance4 > limit/2){
-  motorSpeed4 = map(distance4, 0, limit, MaxPWM, 0);}
-  else{
-    motorSpeed4 = map(distance4, 0, limit, MinPWM, 0);}
-  
+  motorSpeed4 = map(distance4, 0, limit, maxPWM, 0);
   analogWrite(motor4, motorSpeed4);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -225,7 +203,7 @@ void loop() {
   duration5 = pulseIn(PinData5, HIGH);
   distance5 = (duration5 / 2) * 0.0343;
   //stringDistance5 = String(distance5);
-  Serial.print("    stringDistance5: "); Serial.println(distance5);
+  Serial.print(" stringDistance5: "); Serial.println(distance5);
 
 
 
@@ -233,14 +211,7 @@ void loop() {
   if (distance5 > limit) {
     distance5 = limit;
   }
-
-  
-    if(distance5 > limit/2){
-  motorSpeed5 = map(distance5, 0, limit, MaxPWM, 0);}
-  else{
-    motorSpeed5 = map(distance5, 0, limit, MinPWM, 0);}
-
-  
+  motorSpeed5 = map(distance5, 0, limit, maxPWM, 0);
   analogWrite(motor5, motorSpeed5);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
