@@ -179,7 +179,7 @@ void loop() {
   duration1 = pulseIn(PinData1, HIGH);
   distance1 = (duration1 / 2) * 0.0343;
   stringDistance1 = String(distance1);
-  Serial.print("stringDistance1: "); Serial.print(stringDistance1);
+  Serial.print(stringDistance1); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -197,7 +197,7 @@ void loop() {
   duration2 = pulseIn(PinData2, HIGH);
   distance2 = (duration2 / 2) * 0.0343;
   stringDistance2 = String(distance2);
-  Serial.print("          stringDistance2: "); Serial.print(stringDistance2);
+  Serial.print(stringDistance2); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -213,7 +213,7 @@ void loop() {
   duration3 = pulseIn(PinData3, HIGH);
   distance3 = (duration3 / 2) * 0.0343;
   stringDistance3 = String(distance3);
-  Serial.print("          stringDistance3: "); Serial.print(stringDistance3);
+  Serial.print(stringDistance3); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -229,7 +229,7 @@ void loop() {
   duration4 = pulseIn(PinData4, HIGH);
   distance4 = (duration4 / 2) * 0.0343;
   stringDistance4 = String(distance4);
-  Serial.print("          stringDistance4: "); Serial.print(stringDistance4);
+  Serial.print(stringDistance4); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -245,8 +245,9 @@ void loop() {
   duration5 = pulseIn(PinData5, HIGH);
   distance5 = (duration5 / 2) * 0.0343;
   stringDistance5 = String(distance5);
-  Serial.print("          stringDistance5: "); Serial.print(stringDistance5);
+  Serial.print (stringDistance5); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 //////////////////////////--Ultrasonic 6 Data collection/////////////////////////////////////////////////////////////////////////////////////
@@ -261,7 +262,7 @@ void loop() {
   duration6 = pulseIn(PinData6, HIGH);
   distance6 = (duration6 / 2) * 0.0343;
   stringDistance6 = String(distance6);
- Serial.print("          stringDistance6: "); Serial.print(stringDistance6);
+  Serial.print(stringDistance6); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -277,7 +278,7 @@ void loop() {
   duration7 = pulseIn(PinData7, HIGH);
   distance7 = (duration7 / 2) * 0.0343;
   stringDistance7 = String(distance7);
-  Serial.print("          stringDistance7: "); Serial.print(stringDistance7);
+  Serial.print(stringDistance7); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -293,7 +294,7 @@ void loop() {
   duration8 = pulseIn(PinData8, HIGH);
   distance8 = (duration8 / 2) * 0.0343;
   stringDistance8 = String(distance8);
-  Serial.print("          stringDistance8: "); Serial.print(stringDistance8);
+  Serial.print(stringDistance8); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -309,7 +310,7 @@ void loop() {
   duration9 = pulseIn(PinData9, HIGH);
   distance9 = (duration9 / 2) * 0.0343;
   stringDistance9 = String(distance9);
-  Serial.print("          stringDistance9: "); Serial.print(stringDistance9);
+  Serial.print(stringDistance9); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -325,7 +326,7 @@ void loop() {
   duration10 = pulseIn(PinData10, HIGH);
   distance10 = (duration10 / 2) * 0.0343;
   stringDistance10 = String(distance10);
-  Serial.print("          stringDistance10: "); Serial.print(stringDistance10);
+  Serial.print(stringDistance10); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -341,7 +342,7 @@ void loop() {
   duration11 = pulseIn(PinData11, HIGH);
   distance11 = (duration11 / 2) * 0.0343;
   stringDistance11 = String(distance11);
- Serial.print("          stringDistance11: "); Serial.print(stringDistance11);
+  Serial.print(stringDistance11); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -357,7 +358,7 @@ void loop() {
   duration12 = pulseIn(PinData12, HIGH);
   distance12 = (duration12 / 2) * 0.0343;
   stringDistance12 = String(distance12);
-  Serial.print("          stringDistance12: "); Serial.print(stringDistance12);
+  Serial.print(stringDistance12); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -373,7 +374,7 @@ void loop() {
   duration13 = pulseIn(PinData13, HIGH);
   distance13 = (duration13 / 2) * 0.0343;
   stringDistance13 = String(distance13);
-  Serial.print("          stringDistance13: "); Serial.print(stringDistance13);
+  Serial.print(stringDistance13); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -389,7 +390,7 @@ void loop() {
   duration14 = pulseIn(PinData14, HIGH);
   distance14 = (duration14 / 2) * 0.0343;
   stringDistance14 = String(distance14);
-  Serial.print("          stringDistance14: "); Serial.print(stringDistance14);
+  Serial.print(stringDistance14); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -405,10 +406,11 @@ void loop() {
   duration15 = pulseIn(PinData15, HIGH);
   distance15 = (duration15 / 2) * 0.0343;
   stringDistance15 = String(distance15);
-  Serial.print("          stringDistance15: "); Serial.println(stringDistance15);
+  Serial.print(stringDistance15); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/*
+
+
 //////////////////////////--Ultrasonic 16 Data collection/////////////////////////////////////////////////////////////////////////////////////
   
   pinMode(PinData16, OUTPUT);
@@ -421,7 +423,7 @@ void loop() {
   duration16 = pulseIn(PinData16, HIGH);
   distance16 = (duration16 / 2) * 0.0343;
   stringDistance16 = String(distance16);
-  //Serial.print("          stringDistance16: "); Serial.print(stringDistance16);
+  Serial.print(stringDistance16); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -437,7 +439,7 @@ void loop() {
   duration17 = pulseIn(PinData17, HIGH);
   distance17 = (duration17 / 2) * 0.0343;
   stringDistance17 = String(distance17);
-  //Serial.print("          stringDistance17: "); Serial.print(stringDistance17);
+  Serial.print(stringDistance17); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -453,7 +455,7 @@ void loop() {
   duration18 = pulseIn(PinData18, HIGH);
   distance18 = (duration18 / 2) * 0.0343;
   stringDistance18 = String(distance18);
-  //Serial.print("          stringDistance18: "); Serial.print(stringDistance18);
+  Serial.print(stringDistance18); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -469,7 +471,7 @@ void loop() {
   duration19 = pulseIn(PinData19, HIGH);
   distance19 = (duration19 / 2) * 0.0343;
   stringDistance19 = String(distance19);
-  //Serial.print("          stringDistance19: "); Serial.print(stringDistance19);
+  Serial.print(stringDistance19); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -485,7 +487,7 @@ void loop() {
   duration20 = pulseIn(PinData20, HIGH);
   distance20 = (duration20 / 2) * 0.0343;
   stringDistance20 = String(distance20);
-  //Serial.print("          stringDistance20: "); Serial.print(stringDistance20);
+  Serial.print(stringDistance20); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -501,7 +503,7 @@ void loop() {
   duration21 = pulseIn(PinData21, HIGH);
   distance21 = (duration21 / 2) * 0.0343;
   stringDistance21 = String(distance21);
-  //Serial.print("          stringDistance21: "); Serial.print(stringDistance21);
+  Serial.print(stringDistance21); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -517,7 +519,7 @@ void loop() {
   duration22 = pulseIn(PinData22, HIGH);
   distance22 = (duration22 / 2) * 0.0343;
   stringDistance22 = String(distance22);
-  //Serial.print("          stringDistance22: "); Serial.print(stringDistance22);
+  Serial.print(stringDistance22); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -533,7 +535,7 @@ void loop() {
   duration23 = pulseIn(PinData23, HIGH);
   distance23 = (duration23 / 2) * 0.0343;
   stringDistance23 = String(distance23);
-  //Serial.print("          stringDistance23: "); Serial.print(stringDistance23);
+  Serial.print(stringDistance23); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -549,7 +551,7 @@ void loop() {
   duration24 = pulseIn(PinData24, HIGH);
   distance24 = (duration24 / 2) * 0.0343;
   stringDistance24 = String(distance24);
-  //Serial.print("          stringDistance24: "); Serial.print(stringDistance24);
+  Serial.print(stringDistance24); Serial.print("A");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -565,9 +567,10 @@ void loop() {
   duration25 = pulseIn(PinData25, HIGH);
   distance25 = (duration25 / 2) * 0.0343;
   stringDistance25 = String(distance25);
-  //Serial.print("          stringDistance25: "); Serial.print(stringDistance25);
+  Serial.println(stringDistance25);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-*/
+
 }
 //
+
